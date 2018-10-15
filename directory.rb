@@ -4,8 +4,8 @@ def print_header
 end
 
 def prints(names)
-	names.each do |name|
-		puts "#{name[:name]} (#{name[:cohort]} cohort)"
+	names.each_with_index do |name, idx|
+		puts "#{idx+1}. #{name[:name]} (#{name[:cohort]} cohort)"
 	end	
 end
 
