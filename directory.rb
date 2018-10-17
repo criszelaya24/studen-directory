@@ -16,7 +16,7 @@ def print_footer(names)
 end
 
 def saving_students(name, cohort = :november)
-	#save the information
+	#save the information from the student and the cohort
 	@students << {name: name, cohort: cohort}
 end
 
